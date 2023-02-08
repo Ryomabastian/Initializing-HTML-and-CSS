@@ -1,0 +1,227 @@
+body {
+    padding: 20px;
+    padding-bottom: 500px;
+}
+
+p {
+    color: rgb(4, 17, 4);
+    font-size: 30px;
+}
+
+/* Classes e Ids */
+
+/* Para selecionar as Classes usa-se "ponto" e escreve o nome da classe */
+.meu-paragrafo{
+    background-color: black;
+    color: red;
+}
+
+/* Para Selecionar Ids usa-se "reashtag" e escreve o nome da classe */
+#titulo-principal {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-family: Helvetica;
+}
+
+/* Todos os elementos, listas */
+/* o Asteristico é como se tivesse selecionando as tags */
+* {
+    font-style: Arial;
+}
+
+p, h1 {
+    border-bottom: 2px solid rgb(139, 167, 17);/* LInha baixo */
+}
+
+/*  Cores */
+.nome-da-cor {
+    color: pink;
+}
+
+.hexa {
+    color: #09413e;
+    background-color: rgb(206, 173, 173);
+}
+
+.rgb {
+    color: rgb(150, 50, 41);
+}
+
+/* Fontes */
+.serifada{ 
+    font-family: Georgia;
+}
+
+.sem-serifa {
+    font-family: helvetica;
+}
+
+.mono-espacada {
+    font-family: 'Courier New';
+}
+
+/* Size e Weight */
+.tamanho-fonte-grande {
+    font-size: 60px;
+}
+.tamanho-fonte-pequena {
+    font-size: small;
+}
+/* NEGRITO */
+.negrito {
+    font-weight: 900;
+}
+.texto-italico {
+    font-style: italic;
+}
+
+
+/* Box Model */
+.box-model {
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    padding: 20px 10px;
+    margin: 20px;
+}
+
+/* Propriedades de texto */
+.alinhamento {
+    text-align: center;
+}
+.transform-maiusculo {
+    text-transform: uppercase;
+}
+.transform-minusculo {
+    text-transform: lowercase;
+}
+
+/* Espaçamento de letras */
+.espacamento-texto {
+    width: 150px;
+    line-height: 40px;
+    letter-spacing: 10px;
+}
+
+/* Links */
+/* tirar a linha debaixo do link */
+.decoration {
+    text-decoration: none;
+}
+
+.visitado:visited {
+    color: red;
+}
+
+/* mudar a cor de fundo qdo passa o link por cima */
+.estilo-hover:hover {
+    background-color: aquamarine;
+}
+
+/* Link em Button */
+.link-buttom {
+    background-color: greenyellow;
+    border: 3px solid blue;
+    border-radius: 5px;
+    color: rgb(5, 0, 0);
+    text-decoration: none; /* tirar underline */ 
+    display: block;
+    width: 120px;
+    padding: 12px 7px;
+    text-align: center; /* texto no centro*/
+    margin: 30px;
+    text-transform: uppercase; /* letra mauscula */
+    font-weight: 900;  
+    
+}
+
+.link-buttom:hover {
+    background-color: #2e5a9b;
+    transition: 0.5s;
+}
+
+/* Lista */
+.sem-estilo {
+    list-style: none;
+}
+
+/* Display */
+.inline {
+    width: 50px;
+    height: 50px;
+    background-color: #850b6a;
+    margin: 2px ;
+    display: inline-block; /* PRA FICAR LADO A LADO */
+}
+
+h5 {
+    text-align: center;
+}
+
+.bloco {
+    display: block;
+}
+
+.inline-escondido {
+    display: none;
+}
+
+/* Posição */
+.elemento-fixo {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #2e5a9b;    
+    border-bottom: 2px solid blue;
+    color: #fff;
+}
+
+/* Pseudo Seletor / Pseudo Class */
+.primeiro-elemento p:first-child {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Pseudo elemento */
+.primeira-letra::first-letter {
+    font-size: 35px;
+    color: blue;
+    background-color: pink;
+    padding: 4px;
+}
+
+/* Especifidade */
+h2 {
+    color:rgb(14, 63, 14)
+}
+
+.titulo {
+    color: rgb(58, 58, 19);
+}
+
+#titulo-preferido {
+    color:rgb(27, 102, 102);
+}
+
+/* IMPORTANT */
+h2 {
+    color: purple !important;
+}
+
+#id {
+    width: 50%;
+    padding: 5px;
+    border: 2px solid red;
+    color: rgb(1, 12, 15);
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+}
