@@ -1,0 +1,126 @@
+h1 {
+    color: rgb(20, 9, 9);
+}
+
+/* Reset inicial para editar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+/* Cabeçalho */
+
+header {
+    position: fixed;
+    background-color: #63c282;
+    width: 100%;
+    color:aliceblue;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #198b3f;
+} 
+
+/* Grid de Pordutos */
+.container {
+    background-color: rgba(201, 198, 198, 0.904);
+    min-height: 60vh;
+    padding: 50px;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Local dos cards */
+.card {
+    width: 31%;
+    display: inline-block; /* PRA FICAR LADO A LADO */
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+/* Local que fica as imagens MUITO IMPORTANTE */
+.product-image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;/* pra manter a foto centralizada */
+    background-size: cover;/* Para tirar o zoom da foto */
+}
+
+/* imagens */
+#img-1 {
+    background-image: url('../img/tenis1.jpg');
+}
+#img-2 {
+    background-image: url('../img/tenis2.jpg');
+}
+#img-3 {
+    background-image: url('../img/tenis3.jpg');
+}
+#img-4 {
+    background-image: url('../img/tenis4.jpg');
+}
+#img-5 {
+    background-image: url('../img/tenis5.jpg');
+}
+#img-6 {
+    background-image: url('../img/tenis6.jpg');
+}
+
+/* Titulo das imagens */
+h3 {
+    margin-bottom: 10px;
+    color: #0c682a;
+    font-size: 24px;
+    border-left: solid 9px rgb(5, 58, 10);
+    padding-left: 3%;
+}
+
+/* Paragrafos dentro do card */
+.card p {
+    margin-bottom: 10px;
+    border-bottom: 2px solid green;
+    padding-bottom: 2%;
+}
+/* Preço dos cards */
+.bold {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* BOTÃO - CRIANDO */
+.btn {
+    max-width: 100%;
+    display: block;
+    width: 100% ; /* preencher todo espaço possivel*/
+    text-align: center; /* texto no centro*/
+    text-transform: uppercase; /* letra maiuscula */
+    text-decoration: none; /* tirar o underline */
+    background-color: rgb(80, 163, 98); /* cor de fundo */
+    border: 1px solid rgb(2, 0, 0);/* cor da borda margem */
+    border-radius: 3px; /* arredondar borda do botão */
+    color: rgb(18, 20, 18); /* cor do texto */
+    padding: 7px; /* espaçamento interno */
+    margin: 2% solid; /* tamanho da margem */
+    font-weight: 900;  /* Deixar texto NEGRITO */
+    transition: .5s;/* efeitozinho */
+}
+
+.btn:hover{
+    background-color: #104622;
+}
+
+/* Footer Rodapé */
+footer {
+    background-color: #438358;
+    color: white;
+    border-top: 3px solid green;
+    text-align: center;
+    padding: 80px;
+}
+
