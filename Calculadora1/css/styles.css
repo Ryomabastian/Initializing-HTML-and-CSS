@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helveitca;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    align-items: center; /*para colcoar items no centro */
+    justify-content: center; /*para colcoar items no centro */
+    padding-top: 10%;
+    margin: 20px;
+}   
+
+#calc {
+    background-color: rgb(94, 94, 114);
+    text-align: center;
+    border-radius: 3px;
+    width: 400px;
+    height: 450px;
+
+}
+
+h3 {
+    background-color: rgb(79, 114, 102);
+    font-size:xx-large;
+    border: 2px black solid;
+    color: rgb(1, 4, 7);
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding: 1%;
+}   
+
+#operacoes-atentiores {
+    height: 30px;
+    background-color: rgb(119, 119, 119);
+    border-right: transparent solid 2px; /*para colcoar bordar na direita */
+    border-left: transparent solid 2px; /*para colcoar bordar na esquerda */
+    font-size: 18px; /*tamaho fonte */
+    text-align:right ; /* alinhado na direita*/
+    padding: 2px; /* espaçamento interno das bordas */
+    overflow-wrap: break-word; /* para não deixar os numeros vazarem a calculadora */
+}
+
+#operacoes-atual {
+    height: 50px;
+    background-color: rgb(119, 119, 119);
+    font-size: 35px;
+    text-align:right ;/* alinhado na direita*/
+    padding: 4px; /* espaçamento interno das bordas */
+    border-right: transparent solid 2px;/*para colcoar bordar na direita */
+    border-left: transparent solid 2px;/*para colcoar bordar na esquerda */
+    overflow-wrap: break-word; /* para não deixar os numeros vazarem a calculadora */
+}
+
+#botoes {
+    background-color: rgb(119, 119, 119);
+    font-size: 25px;
+    width: 100%;
+    padding: 1%;
+    display: grid ; /*para colcoar os botões em grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr;  /*para ficar grid de 4 em 4 */
+    gap: 3px; /* Espaçamento entre cada botão */
+}   
+
+button {
+    border: solid 0.5px transparent; /* Borda transparente */
+    display: grid; /* PRA FICAR LADO A LADO */
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+    font-weight: 900;
+    font-size: large;
+    padding:30%;
+    transition: .5s;/* efeitozinho */
+}
+
+button:hover{
+    background-color: #6e6e6e; /* A cor de fundo do efeitinho */
+    border-color: black;/* Borda no efeitinho */
+}
+
+.number {
+    background-color: rgb(151, 151, 151);
+    font-weight: 900;  /* Deixar texto NEGRITO */
+    transition: .5s;/* efeitozinho */
+}
+.number:hover{
+    background-color: #6e6e6e; /* A cor de fundo do efeitinho */
+    border-color: black;/* Borda no efeitinho */
+}
+
+.equal-btn {
+    grid-column: span 2;
+    max-height: max-content;
+    padding: 12%;
+    padding-top: 15%;
+    background-color: rgb(119, 119, 179);
+}
