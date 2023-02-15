@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./script/script2.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h1>CALCULADORA BASTIANELLE</h1>
+        <div class="calculadora">
+            <h1>CALCULADORA</h1>
+            <p id="resultado">213132132</p>
+            <table> <!-- // PARTE ONDE FICA OS BOTOES -->
+                
+                <tr> <!-- LINHA --> 
+                    <td><button class="botao" onclick="limpar()">C</button></td>
+                    <td><button class="botao" onclick="deletar()">DEL</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr> <!-- LINHA --> 
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr> <!-- LINHA --> 
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr> <!-- LINHA --> 
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <!-- rowspan é pro bota ocupar 2 espaços na vertical -->
+                    <td rowspan="2"><button class="botao" id="BotaoIgual" onclick="calcular()">=</button></td>
+                </tr>
+                <tr> <!-- LINHA --> 
+                    <!-- colspan é pro bota ocupar 2 espaços na horizontal -->
+                    <td colspan="2"><button class="botao" id="BotaoZero" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        // // Chamar os numeros pro visor da tela
+        // function insert(num) {
+        //     // Adicionar somente um ponto "."
+        //     if (num === '.' && document.getElementById('resultado').innerHTML.includes('.')) {
+        //     return;
+        //     }
+
+        //     var numero = document.getElementById('resultado').innerHTML
+        //     document.getElementById('resultado').innerHTML = numero + num
+
+        // }
+
+        // // Limpar tudo
+        // function limpar() {
+        //     document.getElementById('resultado').innerHTML = ''
+        // }
+
+        // // Deletar ultimo digito na tela
+        // function deletar() {
+        //     document.getElementById('resultado').innerHTML = document.getElementById('resultado').innerHTML.slice(0, -1)
+        // }
+
+        // // Fazer o calculo
+        // function calcular() {
+        // // Fazer calculo automático só chamada o método EVAL
+        //     var resultado = document.getElementById('resultado').innerHTML
+
+        //     if (resultado) {
+        //         document.getElementById('resultado').innerHTML = eval(resultado)
+        //     }
+        
+        // }
+    </script>
+</body>
+</html>
